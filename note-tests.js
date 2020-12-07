@@ -8,11 +8,20 @@ var assert = {
   }
 };
 
-  function storesTextInTextProperty() {
-    var note = new Note("test note");
-    
-    console.log("Test: storesTextInTextProperty");
-    assert.isTrue(note.text === "test note");
-  };
+function storesTextInTextProperty() {
+  var note = new Note("test note");
   
-  storesTextInTextProperty();
+  console.log("Test: storesTextInTextProperty");
+  assert.isTrue(note.text === "test note");
+};
+
+storesTextInTextProperty();
+
+function returnsNoteText() {
+  var note = new Note("test note");
+
+  console.log("Test: returnsNoteText");
+  assert.isTrue(note.getText() === "test note");
+};
+
+returnsNoteText();
