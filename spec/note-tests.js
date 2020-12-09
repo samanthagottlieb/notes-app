@@ -1,6 +1,6 @@
 "use strict";
 
-let note = new Note("test note");
+var note = new Note("test note");
 
 it("stores text in text property", function() {
   expect(note.text).toEqual("test note");

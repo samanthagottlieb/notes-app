@@ -1,6 +1,6 @@
 "use strict";
 
-let noteList = new NoteList();
+var noteList = new NoteList();
 
 it("stores an array of note models", function() {
   noteList.addNote("test note");
