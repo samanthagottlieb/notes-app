@@ -1,0 +1,26 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samanthagottlieb/notes-app.git"
+  },
+  "author": "Samantha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samanthagottlieb/notes-app/issues"
+  },
+  "homepage": "https://github.com/samanthagottlieb/notes-app#readme"
+}
