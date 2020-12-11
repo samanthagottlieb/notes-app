@@ -9,8 +9,8 @@ class NoteList {
     return this.notesArray;
   }
 
-  addNote(note) {
-    var newNote = new Note(note);
+  addNote(note, noteClass = Note) {
+    var newNote = new noteClass(note);
     this.notesArray.push(newNote);
   }
 }
