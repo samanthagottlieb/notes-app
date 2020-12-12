@@ -1,10 +1,10 @@
 "use strict";
 
 class NoteController {
-  constructor(noteList = new NoteList()) {
-    this.noteList = noteList;
-    noteList.addNote("Favourite drink: sparkling water")
-    this.noteListView = new NoteListView(noteList);
+  constructor(noteListClass = NoteList, noteListViewClass = NoteListView) {
+    this.noteList = new noteListClass();
+    this.noteList.addNote("Favourite drink: sparkling water");
+    this.noteListView = new noteListViewClass(this.noteList);
   }
 
   insertHTML() {
